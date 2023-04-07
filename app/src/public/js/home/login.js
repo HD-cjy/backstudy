@@ -9,9 +9,7 @@ const id = document.querySelector("#id"),                           //#을 쓰�
     
 
     function login( ) {
-        console.log("hello User");
+     console.log(id.value);
     }
-    console.log(id);
-    console.log(pw);
-    console.log("hello");
+  
     

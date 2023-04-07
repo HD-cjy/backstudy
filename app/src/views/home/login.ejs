@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+   
     <meta charset="utf-8">
     <title>로그인창</title>
+    <script scr="../../public/js/home/login.js" defer ></script>
 </head>
 <body>
-    <div class="login-wrapper">
+   
         <h2>Login</h2>
-        <form method="post" action="서버의url" id="login-form">
-            <input type="text" name="userName" placeholder="Email">
-            <input type="password" name="userPassword" placeholder="Password">
-            <label for="remember-check">
-                <input type="checkbox" id="remember-check">아이디 저장하기
-            </label>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+            <input id= "id" type="text" placeholder="Email"><br>
+            <input id= "pw" type="text" placeholder="Password">
+            <!-- <label for="remember-check">
+                <br><input type="checkbox" id="remember-check">아이디 저장하기
+            </label> -->
+            <!-- <input id="login-btn" type="submit" value="Login"> -->
+            <button>LOGIN</button>
+
 </body>
 </html>

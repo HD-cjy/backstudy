@@ -9,7 +9,13 @@ const id = document.querySelector("#id"),                           //#을 쓰�
     
 
     function login( ) {
-     console.log(id.value);
+     const req = {
+        id : id.value,
+        pw : password.value,
+     };
+     console.log(req);
+    //  fetch(); 
     }
+
   
     

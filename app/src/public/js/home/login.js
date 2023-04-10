@@ -13,9 +13,20 @@ const id = document.querySelector("#id"),                           //#을 쓰�
         id : id.value,
         pw : password.value,
      };
-     console.log(req);
-    //  fetch(); 
-    }
+     // fetch 라는 것으로 전달 해주는 것 . 
+     // 1. 어떤 경로에서 주고 받을지 벡엔드 개발자가 만듦.  //데이터를 전달하는 과정 먼저 할 것. //피치를 통해 데이터를 받으려면 login이라는 경로와 post라는 메소드를 사용하여
+     //받아 올 수 있는 api가 필요합니다.
+     fetch("/login",{
+         method:"POST",
+         headers:{
+            "Content-Type" : "application/json"
+         },
+         body:JSON.stringify(req),
+     });
 
-  
+
+
+    }
+    
+    
     

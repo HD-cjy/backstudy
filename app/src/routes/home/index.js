@@ -5,8 +5,9 @@ const express=require("express");
 const router=express.Router();
 
 const ctrl = require("./home.ctrl");
-router.get("/",ctrl.home);
-router.get("/login",ctrl.login);
+router.get("/",ctrl.output.home);
+router.get("/login",ctrl.output.login);
+router.post("/login",ctrl.process.login);
 
 //외부에서 라우터를 사용 할 수 있도록 던지기.//라우터는 연결 해 주는 부분이다(req,res)=>{ res.render("home/login");. <<이 부분이 컨트롤러
 module.exports = router;
